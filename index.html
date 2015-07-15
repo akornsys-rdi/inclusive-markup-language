@@ -1,1 +1,113 @@
-Hello, world
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Yet another Markdown flavour?">
+    <title>Inclusive markup language</title>
+    <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="./css/font-awesome.css" rel="stylesheet">
+    <link href="./css/base.css" rel="stylesheet">
+    <link href="./css/highlight.css" rel="stylesheet">
+    <link href="./css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="homepage">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+          <!-- Expander button -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>    
+
+          <!-- Main title -->
+          <a class="navbar-brand" href="#">IMK</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+          <!-- Main navigation -->
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="syntax.html">Syntax</a></li>
+          </ul>
+
+          <!-- Search, Navigation and Repo links -->
+          <ul class="nav navbar-nav navbar-right">
+            <li class="disabled"><a rel="next" ><i class="fa fa-arrow-left"></i> Previous</a></li>
+            <li><a rel="prev" href="syntax.html">Next <i class="fa fa-arrow-right"></i></a></li>
+            <li><a href="https://github.com/akornsys-rdi/inclusive-markup-language"><i class="fa fa-github"></i> GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+        <ul class="nav bs-sidenav">
+          <li class="main active"><a href="#imk"><em>IMK</em>: Descripción</a></li>
+          <li><a href="#whatis">¿Qué es <em>IMK</em>?</a></li>
+          <li><a href="#whyflavour">¿Porqué otro <em>flavour</em> más?</a></li>
+          <li><a href="#whymarkdown">¿Porqué <em>markdown</em>?</a></li>
+          <li><a href="#whatvalueadd">¿ Qué aporta este <em>flavour</em>?</a></li>
+          <li><a href="#contribution">Contribuciones</a></li>
+          <li><a href="#license">Licencia</a></li>
+        </ul>
+      </div></div>
+
+      <div class="col-md-9" role="main">
+        <h1 id="imk">Inclusive markup language</h1>
+        <p>Yet another Markdown flavour?</p>
+        <hr />
+        <h2 id="whatis">¿Que es <strong>IMK</strong>?</h2>
+        <p><strong>IMK</strong> significa <strong>I</strong>nclusive <strong>M</strong>ar<strong>k</strong>up Language. Esto es: Un lenguaje de marcado ligero que pretende ser inclusivo. Le he añadido la coletilla de <em>«Yet another markdown flavour?»</em> por un lado haciéndo un guiño a perl, por otro lado constatando que se trata de un <em>flavour</em> de <a href="http://daringfireball.net/projects/markdown/"><strong>Markdown</strong></a>. Con <em>flavour</em> me refiero a una variante del desarrollo original, que le añade o le personaliza alguna característica.</p>
+        <hr />
+        <p><strong>IMK está bajo desarrollo.</strong></p>
+        <p>Aunque estamos trabajando en ello, aún faltan aspectos por completar y pulir. Esperamos completarlo lo antes posible.</p>
+        <hr />
+        <h2 id="whyflavour">¿Porqué otro <em>flavour</em> más?</h2>
+        <p>Adoro <strong>Markdown</strong>. Desde que lo conozco he ido uśandolo cada vez para más cosas, para todo lo que puedo. Es una forma sencilla y clara de formatear textos, haciéndolos más legibles pero sin molestar a la lectura, es muy natural.</p>
+        <p>Al usarlo para muchos y variados fines, he ido detectando algunas carencias. Eso me ha echo investigar los diferentes <em>flavours</em>, y ver si me proporcionaban lo que necesitaba puntualmente.</p>
+        <p>Uno de los problemas de esto es que un determinado <em>flavour</em> puede no ser compatible con el resto de herramientas que usas, como el editor, el conversor o el render, porque usan <strong>Markdown original</strong> o un <em>flavour</em> concreto.</p>
+        <p>En este proceso me he familiarizado con <strong>Markdown original</strong>, <a href="http://markdown2.github.io/site/"><strong>Markdown 2</strong></a>, y con <em>flavours</em> como <a href="https://michelf.ca/projects/php-markdown/extra/"><strong>extra</strong></a>, <a href="https://help.github.com/articles/github-flavored-markdown/"><strong>github</strong></a>, <a href="https://stackedit.io/Welcome%20document.pdf"><strong>stackedit</strong><sup><i class="fa fa-file-pdf-o"></i></sup></a> o <a href="http://pandoc.org/demo/example9/pandocs-markdown.html"><strong>pandoc</strong></a>. Todos ellos tienen aportes muy buenos, pero volvemos al tema de las incompatibilidades. Son exclusivos entre ellos.</p>
+        <p>Es por ello que en este <em>flavour</em>, pretendo aunar todos esos puntos fuertes, extenderlos y adaptarlos siguiendo la <a href="http://daringfireball.net/projects/markdown/syntax#philosophy">filosofía de <strong>Markdown original</strong></a>.</p>
+        <hr />
+        <h2 id="whymarkdown">¿Porqué <strong>markdown</strong>?</h2>
+        <p>Porque conozco y me desenvuelvo bien con <strong>Markdown</strong>; me resulta muy familiar. Además ahora es notablemente popular, gracias a su uso en comunidades de desarrolladores como Github. Por lo cual hay ya bastante gente que lo conoce, y hay una gran variedad de herramientas que lo interpretan. Por ello es más sencillo adaptar las múltiples herramientas existentes, que crear una nueva.</p>
+        <hr />
+        <h2 id="whatvalueadd">¿ Qué aporta este <em>flavour</em>?</h2>
+        <p>Compatibilidad con otros <em>flavours</em>, opciones de formateo más elaboradas, misma filosofía basada en legibilidad, inclusión de metadatos, renders específicos de gráficos, diagramas, plugins…</p>
+        <hr />
+        <h4 id="as-you-like">Tus textos, como tú quieras que se vean.</h4>
+        <p>En <strong>IMK</strong> se pueden incluir metadatos para que incluso con entornos personalizados, el texto renderizado mantenga el aspecto que tu quieres. Estos metadatos no molestarán al manejo del texto.</p>
+        <h4 id="one-tool">Una única herramienta, todo el poder.</h4>
+        <p>Puede utilizarse para los usos ordinarios y simples que le das al <strong>Markdown original</strong>, pero puede proveerte de características de formateo y maquetación, como para escribir complejas tesis doctorales… Sin límites, sencillo y legible.</p>
+        <h4 id="libre">Absolutamente libre.</h4>
+        <p>Amamos lo libre, también literalmente. Por ello hemos considerado que <strong>IMK</strong> debe estar bajo licencia GPLv3. De esta manera todos pueden contribuir, personalizar, adaptar y hacer que crezca. ¡Involúcrate!</p>
+        <h4 id="export-import">Exporta e importa sin perder información.</h4>
+        <p>Gracias al sistema de metadatos, se puede importar otros formatos de marcado a <strong>IMK</strong> y no se perderá información. ¡Incluso si <strong>IMK</strong> no es compatible con alguna funcionalidad! Si después vuelves a exportar, tus cambios hechos con <strong>IMK</strong> estarán junto al contenido no interpretado.</p>
+        <hr />
+        <h2 id="contribution">Contribuciones</h2>
+        <p>Como en cualquier proyecto abierto y libre, las contribuciones son necesarias y siempre bienvenidas. Por eso estamos abiertos a cualquier contribución, en cualquier formato. Edición o tradución de las especificaciones, implementaciones, dingus, lluvias de ideas…</p>
+        <hr />
+        <h2 id="license">Licencia</h2>
+        <p>Cualquier implementación de estas especificaciones deberá estar bajo licencia GNU Public License 3.</p>
+      </div>
+    </div>
+    <footer class="col-md-12">
+      <hr />
+      <p>Copyright &copy; 2015, <a href="http://about.kwendenarmo.es">kwendenarmo</a>.</p>
+    </footer>
+    <script src="./js/jquery-1.10.2.min.js"></script>
+    <script src="./js/bootstrap-3.0.3.min.js"></script>
+    <script src="./js/highlight.pack.js"></script>
+    <script src="./js/base.js"></script>
+  </body>
+</html>
